@@ -82,7 +82,7 @@ input {
   border-radius: 20px;
   background: #fff;
   outline: none;
-
+  font-family: Nunito, sans-serif;
 }
 
 /* Button */
@@ -99,7 +99,9 @@ button {
   outline: none;
 }
 
-
+button:hover {
+  filter: brightness(110%);
+}
 
 /* Countdown */
 ul {
@@ -125,7 +127,6 @@ li span {
   position: relative;
   top: 60px;
 }
-
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
