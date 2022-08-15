@@ -58,5 +58,20 @@ const updateCountdown = e => {
     updateDOM();
 }
 
+// Reset All Values
+const reset = () => {
+    // Hide Countdowns, show input
+    countdownEl.hidden = true;
+    inputContainer.hidden = false;
+
+    // Stop the countdown
+    clearInterval(countdownActive);
+
+    // Reset values
+    countdownTitle = '';
+    countdownDate = '';
+}
+
 // Event Listeners
 countdownForm.addEventListener('submit', updateCountdown);
+countdownBtn.addEventListener('click', reset);
